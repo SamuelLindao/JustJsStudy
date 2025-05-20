@@ -1,6 +1,8 @@
 let nome = 'Samuel'
+let names = [];
 
-function handleClick()
+
+function handleClick(value)
 {
-  console.log(nome);
+  console.log(value);
 }
