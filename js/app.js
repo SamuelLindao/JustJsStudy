@@ -1,8 +1,9 @@
-let nome = 'Samuel'
-let names = [];
+let segundos = 0;
 
+const contador = document.getElementById('contador');
 
-function handleClick(value)
-{
-  console.log(value);
-}
+setInterval(()=>{
+  segundos++;
+  contador.innerText = segundos;
+  contador.style.fontSize = `${segundos / 0.25}px`;
+  },1000);
