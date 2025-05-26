@@ -31,13 +31,18 @@
     <button onclick="handleClick(1)">Samuel 1</button>
     <button onclick="handleClick(2)">Samuel 2</button>
     <button onclick="handleClick(3)">Samuel 3</button>
-    <button onclick="handleClick(4)">Samuel 4</button>
+    <button onclick="mostrar()">Samuel 4</button>
   </div>
 </body>
 <script>
 
   const nota1 = prompt("Qual é o seu numero 1")
   const nota2 = prompt("Qual é o seu numero 2")
-  alert(`${((Number(nota1)+Number(nota2))/2).toFixed(2)}`);
+  alert(`${((Number(nota1)+Number(nota2))/2).toFixed(2)}`)
+
+  function mostrar()
+  {
+    alert(nota1)
+  }
 </script>
 </html>
