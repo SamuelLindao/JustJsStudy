@@ -1,9 +1,9 @@
-let segundos = 0;
+const frm = document.querySelector("form")
+const resp = document.querySelector("h3")
 
-const contador = document.getElementById('contador');
+frm.addEventListener("submit", (e) =>{
+  e.preventDefault()
 
-setInterval(()=>{
-  segundos++;
-  contador.innerText = segundos;
-  contador.style.fontSize = `${segundos / 0.25}px`;
-  },1000);
+  const nome = frm.inNome.value
+  resp.innerText = `Olá ${nome}`
+})
